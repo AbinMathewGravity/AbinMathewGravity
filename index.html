@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/809bf0cc3f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+       <div id="head">
+        <div class="container">
+            <nav>
+                <img src="images/logoA.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#head">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="resclose()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="resopen()"></i>
+            </nav>
+        </div>
+
+        <div class="head-text">
+            <h2>Hi, I am Abin Mathew</h2>
+            <p>software develepor/.net developer</p>
+        </div>
+       </div>
+    
+
+       <!---------about------------>
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <!--image col-->
+                    <div class="about-col-im">
+                        <img src="images/me.jpg" alt="Abin">
+                    </div>
+                    <!--dis-col-->
+
+                    <div class="about-col-tx">
+                        <h1 class="headings">About me</h1><br>
+                        <p class="discriptions">
+                            Hi, I'm Abin Mathew<br>
+                            I'm from Mundakayam, Kottayam, Kerala. 
+                            There are six members in my family. My father, Mr. Mathew T.M., is a Mason. 
+                            My mother, Mrs. Jessy Pathrose, is a homemaker.
+                            I have three siblings: an elder brother, Mr. Bibin Mathew, who is a B.A. graduate seeking opportunities;
+                            a younger sister, Blessy Mol Mathew, who is pursuing her master's in History; and a younger brother,
+                            Albin Mathew, who is pursuing his bachelor's in Botany. I am a BTech graduate excited to embark on a career in the IT field.
+                            I completed my BTech in computer science and engineering from Kuppam Engineering College in Kuppam, Andhra Pradesh. 
+                            I have also successfully finished a central government-authorized course in software development from 
+                            KKM Soft Pvt Ltd in Trivandrum, Kerala. I'm a self-motivated individual with strong problem-solving skills. 
+                            During my studies, I gained proficiency in Asp.net with C#, C++, Python, Core Java, MSSQL, HTML, CSS, and JavaScript, 
+                            as well as other technologies like .NET.
+                        </p>
+                        <br>
+
+                        <div class="tab-title">
+                            <p class="tab-links act-link" onclick="openfn('edu')">Education</p>
+                            <p class="tab-links" onclick="openfn('skill')">Skills</p>
+                            <p class="tab-links" onclick="openfn('hob')">Intersets</p>
+                        </div>
+
+                        <div class="contents act-con" id="edu">
+                           <!---- <div class="container">--->
+                                <div class="row" id="edus">
+                                    <div class="sslc Educations">
+                                        <div class="eduimg">
+                                            <img src="images/st.antony.jpg">
+                                            <div class="layer">
+                                                <h2>SSLC</h2>
+                                                Board of examimation :<span>Kerala State Board</span><br>
+                                                <p class="discriptions">
+                                                School :<span>St.Antony's High School Mundakayam east</span><br>
+                                                <sub>2015</sub>
+                                                <br>
+                                                <sub>_Mundakayam, Kerala_</sub></p>
+                                                <a href="https://www.facebook.com/p/StAntonys-HS-Mundakayam-100069686209552/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                            </div>
+                                        </div>
+                                  
+                        
+                                    </div>
+                                    
+                                    <div class="Inter Educations">
+                                        <div class="eduimg">
+                                            <img src="images/mrs2.jpg">
+
+                                            <div class="layer">
+                                                <h2>Intermediate</h2>
+                                                Board of examimation :<span>Kerala State Board</span><br>
+                                                <p class="discriptions">School :<span>Model Residential School</span>
+                                                    <br><sub>2015-2017</sub><br>
+                                                <sub>_Aluva, Ernakulam, Kerala_</sub></p>
+                                                <a href="https://schools.org.in/ernakulam/32080100814/model-residential-school-keezhmad.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                            </div>
+                                        </div>
+                                      
+                                       
+                                    </div>
+                                </div><br>
+                                
+                                <div class="row">
+
+                                    <div class="college Educations">
+                                        <div class="eduimg">
+                                            <img src="images/kec1.jpg">
+                                            <div class="layer">
+                                                <h2>Degree</h2>
+                                                 University :<span>JNTU(Anadhapoor)</span><br>
+                                                <p class="discriptions">College :<span>Kuppam engineering College</span>
+                                                <br><sub>2017-2021</sub><br>
+                                                <sub>_Kuppam, chitoor, Andhra Predhesh_</sub></p>
+                                                <a href="https://www.kec.ac.in/welcome-to-kec/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                            </div>
+                                        </div>
+                                    
+                                        
+                                    </div>
+
+                                    <div class="course Educations">
+                                        <div class="eduimg">
+                                            <img src="images/ddu.jpg">
+                                            <div class="layer">
+                                                <h2>Course</h2>
+                                                <span>Software development</span><br>
+                                                <p class="discriptions">Center :<span>Kkm soft pvt lmt</span>
+                                                <sub>_Trvandrum, Kerala_</sub></p>
+                                                <a href="https://www.facebook.com/p/KKM-Soft-Ddugky-Kerala-100076886131054/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    
+                                            </div>
+                                        </div>
+                                    
+                                        
+                                    </div>
+                    
+                                </div><br><br>
+                            <!---- </div>----->
+                        </div>
+
+                        <div class="contents" id="skill">
+                            <div class="skills">
+                                <br>
+                                <ul>
+                                    <h3><span>Front-end</span></h3>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>javascript</li>
+                                </ul>
+                                <br>
+                                <ul>
+                                    <h3><span>Back-end</span></h3>
+                                    <li>C++</li>
+                                    <li>C#</li>
+                                    <li>python</li>
+                                    <li>corejava</li>
+                                </ul>
+                                <br>
+                                <ul>
+                                    <h3><span>Data-base</span></h3>
+                                    <li>mssql</li>
+                                    <li>MySQL</li>
+                                    <li>SQL</li>
+                                </ul>
+                                <br>
+                                <ul>
+                                    <h3><span>Technologies</span></h3>
+                                    <li>Asp.net (framework 4.7.2)</li>
+                                    <li>Asp.net core (MVC)</li>
+                                </ul>
+                           </div>
+                        </div>
+
+                        <div class="contents" id="hob">
+                            <div class="interest">
+                                <ul>
+                                    <li>Playing Football</li>
+                                    <li>Playing Vollyball</li>
+                                    <li>Playing Cricket</li>
+                                    <li>Swimming</li>
+                                    <li>Listening Music</li>
+                                    <li>arts</li>
+                                    <li>Being with friends</li>
+                                    <li>Hiking</li>
+                                    <li>Food</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>   
+            </div>
+        </div>   
+        <!-------Projects-->
+        <div id="projects">
+            <div class="container">
+                <h1 class="headings">Projects</h1>
+                <div class="projecs">
+                    <div>
+                        <h2><span>Waste Management System</span></h2><br>
+                        <p> it's web application developed by using Asp.net (framework 4.7.2)
+                        with C#</p><br>
+                        <a href=""> To Know More</a>
+                    </div>
+
+                    <div >
+                        <h2><span>Testing seed for improve cultivation</span></h2><br>
+                        <p> it's Adroid application developed in Android studio by using java</p><br>
+                        <a href=""> To Know More</a>
+
+                    </div>
+
+                    <div>
+                        <h2><span>Liberary Management System</span></h2><br>
+                        <p> it's a web application developed by using Asp.net core (MVC)</p><br>
+                        <a href=""> To Know More</a>
+                    </div>
+
+                    <div>
+                        <h2><span>Personal website</span></h2><br>
+                        <p> Persoal portfolio website using html,css and javascript</p><br>
+                        <a href=""> To Know More</a>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <!---- contact--->
+        <div id="contact">
+            <div class="container">
+                <h1 class="headings">Contacts</h1>
+                <div class="row">
+                    <div class="contleft">
+                        <h2>contact me</h2>
+
+                        <p><i class="fa-solid fa-envelope"></i> ebiabi410@gmail.com</p>
+                        <p><i class="fa-solid fa-mobile-screen"></i> 6282958471</p>
+                        
+                        <div class="icons">
+                            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/abin-mathew-thakadiyel/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/AbinMathewGravity"><i class="fa-brands fa-github"></i></a><br>
+                            <div class="addr">
+                                <i class="fa-solid fa-house"></i>
+                                <p id="ad">
+                                    Thakadiyel House,<br>
+                                    Punchavayal p.o
+                                    504 Colony, Erumeli North<br>
+                                    Kottayam,Kerala<br>
+                                    686515
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <a href="images/ABIN MATHEW Resume.docx.pdf" download class="dn dn1">Download CV</a>
+                    </div>
+                    
+                    <div class="contrignt">
+                        <form name="submit-to-google-sheet">
+                            <input  type="text" name="Name" placeholder="Your Name" required>
+                            <input  type="text" name="email" placeholder="Your email" required>
+                            <textarea name="msg"  rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="dn dn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="coyrignt">
+                <p>@Abin Mathew</p>
+            </div>
+        </div>   
+        
+        <script>
+            var tl=document.getElementsByClassName("tab-links");
+            var tc=document.getElementsByClassName("contents");
+            function openfn(tn)
+            {
+                for(let a of tl)
+                {
+                    a.classList.remove("act-link");
+                   // console.log(a.textContent);
+                }
+                for(let b of tc)
+                {
+                    b.classList.remove("act-con");
+                   // console.log(b.textContent);
+                }
+                   // Add the class "act-link" to the clicked tab.
+
+                event.currentTarget.classList.add("act-link");
+        
+                  // Show the content associated with the clicked tab.
+
+                document.getElementById(tn).classList.add("act-con");
+            }
+        </script>
+        <script>
+            var sidemenu=document.getElementById("sidemenu");
+            function resclose()
+            {
+                sidemenu.style.right="-200px";
+            }
+            function resopen()
+            {
+                sidemenu.style.right="0";
+            }
+        </script>
+
+        <!-------sheet-->
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwVavM3Z5cCT5ya82ASdqCDuhe3ll32LBnsvw_fjB81Zb-Vl38vXqOtb9h2FIZbXdI8bA/exec'
+            const form = document.forms['submit-to-google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    if (response.status === 200)
+                     {
+                       alert('Successful');
+                       form.reset(); 
+                     }
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+                           
+                            
+    </body>
+</html>
